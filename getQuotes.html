@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The HomeStars Replica!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="language" content="English">
+    <link rel="stylesheet" href="Assets/Css/header.css">
+    <style>
+        div.content{
+            width: 80%;
+            margin: 20px auto;
+            margin-top: 100px;
+            text-align: center;
+            color:white;
+            
+        }
+        div.content form{
+            text-align: justify;
+            display: inline-block;
+            background-color: #7d9fae;
+            
+            font-size: 20px;
+            width: 60%;
+        }
+        div.forms{
+            overflow: hidden;
+        }
+        div.content form ul{
+            margin: 5px;
+            padding-left: 10px;
+            list-style-type: none;
+            
+        }
+        div.content form ul p{
+            text-align: center;
+        }
+        div.content form ul li{
+            cursor: pointer;
+            margin: 5px;
+            padding-left: 10px;            
+        }
+
+        .submitButtons {
+            padding: 5px;
+            text-align: center;
+            margin: 0px auto;
+            width: 50%;
+        }
+        .submitButtons>input {
+            font-size: 20px;
+            width: 48%;
+            margin: 5px auto;
+            height: 100%;
+        }   
+        ul>p:nth-of-type(1){
+            color: #fce856;
+        }
+        .stories{
+            text-align: center;
+        }
+        .stories select{
+            width: 50%;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        .submitButtons input{
+            background:#0CF;
+            box-sizing: border-box;
+            border: none;
+        }
+        .submitButtons input:hover{
+            cursor: pointer;
+            background:#09C;
+            transition:background-color 0.3s ease-in-out;
+            
+        }
+    </style>
+    <link rel="stylesheet" href="Assets/Css/footer.css">
+</head>
+<body>
+   
+    <nav>
+
+        <ul class="Navbar-initial">
+            <li class="logo"><a href="./index.html">HomeStars</a></li>
+            <li><a href="./categories.html">Browse Categories</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./searchForReview.html">Write a Review</a></li>
+            <li><input type="text" name="Search_Category"  placeholder="Search a category"></li>
+            <li>
+                <input type="text" name="Search_City"  placeholder="Search city">
+            </li>
+            <li>
+                <button class="Search" style="color:#cbffff;"><span>Search</span></button>
+                
+            </li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./signup.html">Signup</a></li>
+            <li><a href="./joinHomeStars.html">Join HomeStars</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="content">
+            <div class="forms">
+        
+            <form action="#">
+                <ul class="roof">
+            <li>
+                <p>Roofing</p>
+            </li>
+            <li onclick="selectOption(this.children[0].id)"><input type="radio" id="roof1" name="gender" value="male">
+            <span>Flat, Foam, or Single Ply Roofing Install </span></li>
+            <li onclick="selectOption(this.children[0].id)"><input type="radio" id="roof2" name="gender" value="female">
+            <span>Install Asphalt Shingle Roofing</span></li>
+            <li onclick="selectOption(this.children[0].id)"><input type="radio" id="roof3" name="gender" value="other">
+            <span>Install Heating Cable for Roof</span></li>
+            </ul></form>
+        <form action="#">
+            <ul class="nature">
+        <li>
+            <p>Nature</p>
+        </li>
+        <li onclick="selectOption(this.children[0].id)"><input type="radio" id="nature1" name="gender" value="male">
+        <span>Flat, Foam, or Single Ply Roofing Install </span></li>
+        <li onclick="selectOption(this.children[0].id)"><input type="radio" id="nature2" name="gender" value="female">
+        <span>Install Asphalt Shingle Roofing</span></li>
+        <li onclick="selectOption(this.children[0].id)"><input type="radio" id="nature3" name="gender" value="other">
+        <span>Install Heating Cable for Roof</span></li>
+        </ul></form>
+        <form action="#"><ul class="stories">
+        <li>
+            <p>How many stories is your home?</p>
+        </li>
+        <li><select>
+        
+            <option>Single story</option>
+        
+        
+            <option>Double story</option>
+        
+        
+            <option>Three story & more</option>
+        
+        </select></li>
+        </ul></form>
+        <div class="submitButtons">
+            <input type="submit" value="Submit">
+            </div>
+        </div>
+</div>
+<footer class="footer">
+    <div class="newsletter">
+        <div class="newsletter_signup">
+            <span>Get Exclusive Tips & Advice</span>
+            <a href="./newsLetterSignup.html">Newsletter Signup</a>
+        </div>
+        <div class="newsletter_contactus">
+            <span>Need help?</span>
+            <a href="./contactUs.html">Contact us</a>
+        </div>
+        <hr>
+    </div>
+    <ul>
+        <li>
+            Homeowners
+        </li>
+
+<li>
+    <a href="">Browse Categories</a>
+</li>
+<li>
+    <a href="">Browse Tasks</a>
+</li>
+<li>
+    <a href="">Write A Review</a>
+</li>
+<li>
+    <a href="">Blog</a>
+</li>
+<li>
+    <a href="">Star Reviewers</a>
+</li>
+
+    </ul>
+    <ul>
+        <li>
+            Homeowners
+        </li>
+    
+    <li>
+    <a href="">Browse Categories</a>
+    </li>
+    <li>
+    <a href="">Browse Tasks</a>
+    </li>
+    <li>
+    <a href="">Write A Review</a>
+    </li>
+    <li>
+    <a href="">Blog</a>
+    </li>
+    <li>
+    <a href="">Star Reviewers</a>
+    </li>
+    
+    </ul>
+    <ul>
+        <li>
+            Homeowners
+        </li>
+    
+    <li>
+    <a href="">Browse Categories</a>
+    </li>
+    <li>
+    <a href="">Browse Tasks</a>
+    </li>
+    <li>
+    <a href="">Write A Review</a>
+    </li>
+    <li>
+    <a href="">Blog</a>
+    </li>
+    <li>
+    <a href="">Star Reviewers</a>
+    </li>
+    
+    </ul>
+</footer>
+<script>
+    function selectOption(v){
+        var elem=document.querySelector("#"+v);
+        elem.checked="true";
+    
+}
+</script>
+</body>
+</html>

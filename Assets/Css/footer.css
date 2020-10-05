@@ -1,0 +1,90 @@
+
+
+        .footer{
+            max-height:360px ;
+            width:100%;
+            background-color: whitesmoke;
+            overflow: hidden;
+            border-radius: 2px;
+            background-color: #5d7f9c;
+        
+        }
+        .footer>ul>li:nth-of-type(1){
+            color:#e6ffff ;
+            font-weight: 800;
+            
+        }
+        .newsletter{
+            text-align: center;
+        }
+        .footer hr{
+            color: white;
+        }
+        .newsletter>ul,.footer>ul{
+            list-style: none;
+            
+            
+        }
+        .newsletter_signup>a{
+            background-color:#5d7f9c;
+            border: none;
+            color: #e6ffff;
+            font-size: 15px;
+            font-weight: 800;
+            text-decoration: none;
+        }
+        .newsletter_signup>a:hover{
+            text-decoration: underline;
+        }
+        .newsletter_signup>span,.newsletter_contactus,.newsletter_contactus>a{
+            color: #e6ffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 800;
+            padding: 10px;
+        }
+        .newsletter_contactus>a:hover{
+            text-decoration: underline;
+        }
+        .footer li a,.footer ul lh{
+            color: #e6ffff;
+            text-decoration: none;
+            line-height: 1.8;
+            
+        }
+        .footer li a:hover {
+            text-decoration: underline;
+        }
+    .newsletter_signup{
+        display: inline-block;
+        
+
+
+    }
+    .newsletter_signup>button{
+        background-color:#5d7f9c;
+        color:#cbffff;
+        border: 1px solid;
+        
+    }
+    .newsletter_signup>button span{
+        
+        font-size: 17px;
+        padding: 5px;
+    }
+    .newsletter_contactus{
+        display: inline-block;
+        
+        right: 0px;
+        
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+    .footer ul{
+        width: 30%;
+        float: left;
+    }
+    .footerNavlinks li{
+        margin-bottom: 5px;
+
+    }

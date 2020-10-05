@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The HomeStars Replica!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="language" content="English">
+    <link rel="stylesheet" href="Assets/Css/header.css">
+    <style>
+ 
+    .jtron{
+        
+        height: 280px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+        color: white;
+    }
+    .jtron input{
+        font-size: 20px;
+        width: 400px;
+        height: 40px;
+        margin: auto;
+    }
+
+    .jtron button{
+        
+        height: 40px;
+        border: 0;
+        background-color: #5d7f9c;
+        color: #e6ffff;
+        font-size: 15px;
+    }
+    .jtron a{
+        text-decoration:none;
+        color: white;
+        background-color:#5d7f9c ;
+    }
+    .content{
+        background-color: white;
+        max-height: 2000px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+        color: #27a9e1;
+    }
+    .content>div{
+        display: block;
+        overflow: hidden;
+    }
+   
+
+    div.gallery {
+        
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 32%;
+  
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.reviews{
+    width: 80%;
+    margin: auto;
+    color: #27a9e1;
+    font-size: 15px;
+    background-color: white;
+    overflow: hidden;
+    
+}
+div.reviews>div{
+    display: inline;
+    float: left;
+    width: 48.8%;
+    margin: 5px;
+    border: 1px solid;
+}
+
+div.reviews h3{
+    width: 50%;
+    margin: auto;
+}
+div.reviews img{
+    width: 100%;
+    max-height: 420px;
+
+}
+div.getStarted{
+    background-color: white;
+    color: #27a9e1;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+div.getStarted>h3{
+    width: 50%;
+    margin: 5px auto;
+}
+div.getStarted>button{
+    cursor:pointer;
+	width:30%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+div.getStarted>button:hover{
+background:#09C;
+
+transition:background-color 0.3s ease-in-out;
+}
+
+    </style>
+    <link rel="stylesheet" href="Assets/Css/footer.css">
+</head>
+<body>
+ 
+    <nav>
+
+        <ul class="Navbar-initial">
+            <li class="logo"><a href="./index.html">HomeStars</a></li>
+            <li><a href="./categories.html">Browse Categories</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./searchForReview.html">Write a Review</a></li>
+            <li><input type="text" name="Search_Category"  placeholder="Search a category"></li>
+            <li>
+                <input type="text" name="Search_City"  placeholder="Search city">
+            </li>
+            <li>
+                <button class="Search" style="color:#cbffff;"><span>Search</span></button>
+                
+            </li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./signup.html">Signup</a></li>
+            <li><a href="./joinHomeStars.html">Join HomeStars</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="jtron">
+        <h1>Get matched with local pros for
+            your next home project.</h1>
+        <input type="text" value="" placeholder="Search for a category">
+        <button id="getQuote" onclick="changePage();">Get Quotes</button>
+    </div>
+    <div class="content">
+        <h2>Browse by category</h2>
+        <div>
+            <h3>Design</h3>
+        <hr>
+        <div class="gallery">
+        <a target="_blank" href="#">
+        <img src="Assets/Images/Gallary/image1.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Favourite Design</div>
+        </div>
+        
+        <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+        <img src="Assets/Images/Gallary/image2.png" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Homestar users like this!</div>
+        </div>
+        
+        <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+        <img src="Assets/Images/Gallary/image3.png" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Popular Choice!</div>
+        </div>
+        </div>
+
+        <div>
+            <h3>Improvement</h3>
+        <hr>
+        <div class="gallery">
+        <a target="_blank" href="#">
+        <img src="Assets/Images/Gallary/image3.png" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Repairment we provide</div>
+        </div>
+        
+        <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+        <img src="Assets/Images/Gallary/image5.png" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Satisfaction at 100%</div>
+        </div>
+        
+        <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+        <img src="Assets/Images/Gallary/image6.png" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Fancy Improvements</div>
+        </div>
+        </div>
+
+    
+        
+    </div>
+    <div class="reviews">
+        <hr>
+        <div class="review1">
+            <h3>Hire Verified</h3>
+            <img src="Assets/Images/reviews/1.png" alt="">
+            
+        </div>
+        
+        <div class="review2">
+            <h3>Get Matched with Local Pros</h3>
+            <img src="Assets/Images/reviews/2.png" alt="">
+            
+        </div>
+    </div>
+    <div class="getStarted">
+        <hr>
+        <h3>Are you a Home Service Pro?</h3>
+        <h3>Connect with new customers, now.</h3>
+        <button>Get Started</button>
+        
+    </div>
+    <footer class="footer">
+        <div class="newsletter">
+            <div class="newsletter_signup">
+                <span>Get Exclusive Tips & Advice</span>
+                <a href="./newsLetterSignup.html">Newsletter Signup</a>
+            </div>
+            <div class="newsletter_contactus">
+                <span>Need help?</span>
+                <a href="./contactUs.html">Contact us</a>
+            </div>
+            <hr>
+        </div>
+        <ul>
+             <li>
+                 Homeowners
+             </li>
+
+    <li>
+        <a href="">Browse Categories</a>
+    </li>
+    <li>
+        <a href="">Browse Tasks</a>
+    </li>
+    <li>
+        <a href="">Write A Review</a>
+    </li>
+    <li>
+        <a href="">Blog</a>
+    </li>
+    <li>
+        <a href="">Star Reviewers</a>
+    </li>
+  
+        </ul>
+        <ul>
+            <li>
+                Homeowners
+            </li>
+        
+        <li>
+        <a href="">Browse Categories</a>
+        </li>
+        <li>
+        <a href="">Browse Tasks</a>
+        </li>
+        <li>
+        <a href="">Write A Review</a>
+        </li>
+        <li>
+        <a href="">Blog</a>
+        </li>
+        <li>
+        <a href="">Star Reviewers</a>
+        </li>
+        
+        </ul>
+        <ul>
+            <li>
+                Homeowners
+            </li>
+        
+        <li>
+        <a href="">Browse Categories</a>
+        </li>
+        <li>
+        <a href="">Browse Tasks</a>
+        </li>
+        <li>
+        <a href="">Write A Review</a>
+        </li>
+        <li>
+        <a href="">Blog</a>
+        </li>
+        <li>
+        <a href="">Star Reviewers</a>
+        </li>
+        
+        </ul>
+    </footer>
+<script>
+    function changePage(){
+        window.location.href="./GetQuotes.html";
+    }
+</script>
+</body>
+
+</html>

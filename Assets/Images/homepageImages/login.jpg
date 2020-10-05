@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <link rel="stylesheet" href="login_files/header.css">
+    <style>
+    .content{
+        height: 380px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+        color: white;
+    }
+    .content input{
+        font-size: 20px;
+        width: 400px;
+        height: 60px;
+        margin: auto;
+    }
+    .content hr{
+        width: 50%;
+        margin: auto;
+        color: white;
+    }
+    .content>button{
+        width: 70px;
+        height: 50px;
+        border: 0;
+        background-color: #5d7f9c;
+        color: #e6ffff;
+        font-size: 17px;
+    }
+    .content button img{
+        width:40px;
+        height:20px;
+    }
+    .login_body{
+        display: block;
+        
+    }
+
+    .login_body>input{
+        font-size: 20px;
+        width: 320px;
+        padding:11px;
+        border:1px;
+        height: 15px;
+    }
+    .loginDiv>button{
+        background-color: #5d7f9c;
+        width: 250px;
+        height: 30px;
+        margin: 10px;
+        
+    }
+    .loginDiv>button span{
+        color: white;
+        font-size: 20px;
+    }
+    .login_choice{
+        display: block;
+    }
+    .login_choice>button{
+        width: 300px;
+        height: 50px;
+        
+    }
+    .login_choice button:nth-child(1){
+        background-color:#3b5999;
+        border: 0px;
+        margin-top: 10px;
+    }
+    .login_choice>button:nth-of-type(1)>img{
+        
+        width: 50px;
+        height: 40px;
+        padding-right: 20px;
+    }
+    .login_choice>button:nth-of-type(1)>span{
+        color:#ffffff;
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+    .login_choice button:nth-child(2){
+        background-color:#ffffff;
+        border: 0px;
+        margin-top: 10px;
+    }
+    .login_choice>button:nth-of-type(2)>img{
+        
+        width: 50px;
+        height: 40px;
+        padding-right: 20px;
+    }
+    .login_choice>button:nth-of-type(2)>span{
+        
+        color: #757575;
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+    
+    </style>
+    <link rel="stylesheet" href="login_files/footer.css">
+    <nav>
+
+        <ul class="Navbar-initial">
+            <li class="logo"><a href="">HomeStars</a></li>
+            <li><a href="">Browse Categories</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Write a Review</a></li>
+            <li><input type="text" name="Search_Category" id="" placeholder="Search a category"></li>
+            <li>
+                <input type="text" name="Search_City" id="" placeholder="Search city">
+            </li>
+            <li>
+                <button class="Search" style="color:#cbffff;"><span>Search</span></button>
+                
+            </li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Signup</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        <div class="login_head">
+            <h1>Log In</h1>
+        </div>
+        <div class="login_body">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Password">
+        </div>
+        <div class="loginDiv">
+            <button><span>Sign In</span></button>
+        </div>
+        <hr>
+        <div class="login_choice">
+        
+        <button><img src="login_files/facebookicon.jpg" alt=""><span>LOG IN USING Facebook</span></button>
+        <button><img src="login_files/googleicon.png" alt="" "=""><span>LOG IN USING GOOGLE</span></button>    
+        </div>
+        
+    </div>
+
+
+    <footer class="footer">
+        <div class="newsletter">
+            <div class="newsletter_signup">
+                <span>Get Exclusive Tips &amp; Advice</span>
+                <button><span>Signup</span></button>
+            </div>
+            <div class="newsletter_contactus">
+                <span>Need help?</span>
+                    <a href="#">Contact us</a>
+            </div>
+            <hr>
+        </div>
+        <ul>
+             <li>
+                 Homeowners
+             </li>
+
+    <li>
+        <a href="">Browse Categories</a>
+    </li>
+    <li>
+        <a href="">Browse Tasks</a>
+    </li>
+    <li>
+        <a href="">Write A Review</a>
+    </li>
+    <li>
+        <a href="">Blog</a>
+    </li>
+    <li>
+        <a href="">Star Reviewers</a>
+    </li>
+    <li>
+        <a href="">Homeowner FAQ</a>
+    </li>
+    <li>
+        <a href="">Review Guidelines</a>
+    </li>
+    <li>
+        <a href="">Homeowner Trust</a>
+    </li>
+    <li>
+        <a href="">Cost Guides</a>
+    </li>
+    <li>
+        <a href="">Reno Report</a>
+    </li>
+        </ul>
+    </footer>
+
+
+
+<iframe src="login_files/blank_003.htm" style="z-index: 2147483647; border: medium none; top: 0px; left: 0px; margin: 0px; clip: auto; display: none; position: absolute !important; background-color: transparent; height: 857px; width: 1349px;" scrolling="no" id="firefox-screenshots-selection-iframe" role="dialog"></iframe><iframe src="login_files/blank_003.htm" style="z-index: 2147483647; border: medium none; top: 0px; left: 0px; margin: 0px; clip: auto; position: fixed !important; background-color: transparent; width: 100%; height: 100%; display: none;" scrolling="no" id="firefox-screenshots-preselection-iframe" role="dialog"></iframe><iframe src="login_files/blank_003.htm" style="z-index: 2147483647; border: medium none; top: 0px; left: 0px; margin: 0px; clip: auto; display: block; position: fixed !important; background-color: transparent; height: 100%; width: 100%;" scrolling="no" id="firefox-screenshots-preview-iframe" role="dialog"></iframe></body></html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The HomeStars Replica!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="language" content="English">
+        <link rel="stylesheet" href="Assets/Css/header.css">
+        <style>
+
+* {
+	
+	
+	box-sizing:border-box;
+	
+}
+
+body {
+	
+	font-weight:300;
+	font-size: 15px;
+	line-height:30px;
+	color: white;
+	
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+#cForm input[type="text"], #cForm input[type="email"], #cForm input[type="tel"], #cForm input[type="url"], #cForm textarea, #cForm button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+
+
+#cForm h3 {
+    
+	color: #fce856;
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+form h4 {
+	margin:5px 0 15px;
+	display:block;
+    font-size:13px;
+    
+    color: white;
+}
+
+fieldset {
+	border: medium none;
+	margin: 0 0 10px;
+	min-width: 50%;
+	padding: 0;
+	max-width: 100%;
+}
+
+#cForm input, #cForm textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+    padding:10px;
+    font-size:15px;
+}
+
+#cForm input[type="text"]:hover, #cForm input[type="email"]:hover, #cForm input[type="tel"]:hover, #cForm input[type="url"]:hover, #cForm textarea:hover {
+    font-size:15px;
+	border:1px solid #AAA;
+}
+#cForm select{
+    width: 100%;
+    font-size:15px;
+    height: 38px;
+    
+}
+#cForm textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+div.Postal_Phone{
+    overflow: hidden;
+}
+div.Postal_Phone>fieldset{
+    
+    width: 48%;
+    margin: auto;
+    float: left;
+}
+#cForm button {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#cForm button[type="submit"]:hover {
+	background:#09C;
+
+	transition:background-color 0.3s ease-in-out;
+}
+
+#cForm button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#cForm input:focus, #cForm textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+#cForm {
+	width:400px;
+	margin:40px auto;
+	background:#5d7f9c;
+	padding:25px;
+
+}
+.worksHead{
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color:#535455 ;
+}
+.worksBody{
+    text-align: center;
+    background-color: white;
+    color: black;
+overflow: hidden;
+}
+
+.worksBody>div{
+    padding-left: 10px;
+width: 33.3%;
+float: left;
+}
+.worksBody>div>h3{
+    color: #535455;
+}
+.worksBody>div>p{
+    color: #929394;
+}
+.plans{
+    
+    
+    overflow: hidden;
+    background-color: white;
+    color: #929394;
+    padding-bottom: 10px;
+}
+.plans>div>h3{
+    text-align: center;
+}
+.plans>div{
+    width: 48%;
+    float: left;
+    padding-left: 25px;
+    border: 1px solid;
+    margin: 10px 10px;
+}
+.buttonDiv{
+    padding-bottom: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.buttonDiv>button{
+    background:#0CF;
+	color:#FFF;
+    
+    text-align: center;
+    font-size: large;
+
+    cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+    padding-bottom: 10px;
+}
+.buttonDiv>button:hover{
+
+
+background:#09C;
+
+transition:background-color 0.3s ease-in-out;
+}
+.hide{
+    display: none;
+}
+footer>ul{
+    margin: 10px;
+}
+        </style>
+        <link rel="stylesheet" href="Assets/Css/footer.css">
+    </head>
+    <body>
+
+        <nav>
+
+            <ul class="Navbar-initial">
+                <li class="logo"><a href="./index.html">HomeStars</a></li>
+                <li><a href="./categories.html">Browse Categories</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./searchForReview.html">Write a Review</a></li>
+                <li><input type="text" name="Search_Category"  placeholder="Search a category"></li>
+                <li>
+                    <input type="text" name="Search_City"  placeholder="Search city">
+                </li>
+                <li>
+                    <button class="Search" style="color:#cbffff;"><span>Search</span></button>
+                    
+                </li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html">Signup</a></li>
+                <li><a href="./joinHomeStars.html">Join HomeStars</a></li>
+                
+            </ul>
+        </nav>
+<div class="container">  
+
+  <form id="cForm" action="#" method="post">
+      <h3>
+        Register your Company
+      </h3>
+    
+    <fieldset>
+      <input placeholder="Your Business Name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+  
+    <fieldset>
+      <select tabindex="4">
+          
+          <option>Alarm Systems</option>
+          <option>Basement Renovation</option>
+          <option>Chimney Build & Repair</option>
+          <option>Demolition</option>
+          <option>
+            Excavation
+          </option>
+
+      </select>
+    </fieldset>
+    <div class="Postal_Phone">
+    <fieldset>
+        <input placeholder="Postal Code" type="text" tabindex="1" required >
+      </fieldset>
+      <fieldset>
+        <input placeholder="Phone Number" type="text" tabindex="1" required>
+      </fieldset>
+    </div>
+    <fieldset>
+      <button name="submit" type="submit" id="cForm-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+ 
+<div class="works">
+    <div class="worksHead">
+        <h3>How it works</h3>
+    </div>
+        
+        <div class="worksBody">
+<div class="works1">
+
+</div>
+
+<div class="works1">
+    <img src="Assets/Images/homepageImages/1.png" alt="">
+<h3> Connect with project-ready homeowners </h3>
+<p> Create a profile to get exposure to the 7 million homeowners who visit HomeStars, every year. Receive service requests from job-ready homeowners looking to hire a pro like you. </p>
+</div>
+<div class="works2">
+    <img src="Assets/Images/homepageImages/2.png" alt="">
+<h3> Showcase your business </h3>
+<p> Collect customer reviews. Show prospects why they should hire you with all the great things your customers are saying about your business and team. </p>
+</div>
+<div class="works3">
+    <img src="Assets/Images/homepageImages/3.png" alt="">
+<h3>Build trust with a HomeStars Verified badge</h3>
+<p>Homeowners want to hire a home service pro they can trust - get Verified and show homeowners that you’re a credible and trustworthy choice for their next project. </p>
+</div>
+
+</div>
+</div>
+
+<div class="plans">
+    <hr>
+<div class="plan1">
+    <h3>Basic</h3>
+    <p> Create a basic profile to connect with Canada’s largest homeowner community. </p>
+    <ul>
+        <li>
+            Own and manage your Free business profile 
+        </li>
+        <li>
+            Receive, respond to and share customer reviews 
+        </li>
+        <li>
+            Unlimited profile leads 
+        </li>
+    </ul>
+<div class="buttonDiv">
+    <button>Get Started</button>
+</div>
+</div>
+<div class="plan2">
+    <h3> Brand Builder </h3>
+    <p>  Win more jobs with a premium business profile. Brand Builder offers pros enhanced brand presence and maximum exposure to project-ready homeowners.  </p>
+    <ul>
+        <li>
+            All Basic benefits, plus: 
+        </li>
+        <li>
+Premium business profile with logo, photo galleries, video and contact details 
+        </li>
+        <li>
+            Access to a portion of HomeStars Leads, and unlimited Profile Leads
+        </li>
+    </ul>
+    <div class="buttonDiv">
+        <button>Learn More</button>
+    </div>
+</div>
+</div>
+
+</div>
+<footer class="footer">
+    <div class="newsletter">
+        <div class="newsletter_signup">
+            <span>Get Exclusive Tips & Advice</span>
+            <a href="./newsLetterSignup.html">Newsletter Signup</a>
+        </div>
+        <div class="newsletter_contactus">
+            <span>Need help?</span>
+            <a href="./contactUs.html">Contact us</a>
+        </div>
+        <hr>
+    </div>
+    <ul>
+         <li>
+             Homeowners
+         </li>
+
+<li>
+    <a href="">Browse Categories</a>
+</li>
+<li>
+    <a href="">Browse Tasks</a>
+</li>
+<li>
+    <a href="">Write A Review</a>
+</li>
+<li>
+    <a href="">Blog</a>
+</li>
+<li>
+    <a href="">Star Reviewers</a>
+</li>
+
+    </ul>
+    <ul>
+        <li>
+            Homeowners
+        </li>
+
+<li>
+   <a href="">Browse Categories</a>
+</li>
+<li>
+   <a href="">Browse Tasks</a>
+</li>
+<li>
+   <a href="">Write A Review</a>
+</li>
+<li>
+   <a href="">Blog</a>
+</li>
+<li>
+   <a href="">Star Reviewers</a>
+</li>
+
+   </ul>
+   <ul>
+    <li>
+        Homeowners
+    </li>
+
+<li>
+<a href="">Browse Categories</a>
+</li>
+<li>
+<a href="">Browse Tasks</a>
+</li>
+<li>
+<a href="">Write A Review</a>
+</li>
+<li>
+<a href="">Blog</a>
+</li>
+<li>
+<a href="">Star Reviewers</a>
+</li>
+
+</ul>
+</footer>
+
+    
+</body>
+</html>

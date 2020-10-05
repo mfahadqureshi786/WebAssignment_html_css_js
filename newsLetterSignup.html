@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The HomeStars Replica!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="language" content="English">
+        <link rel="stylesheet" href="Assets/Css/header.css">
+        <style>
+
+* {
+	
+	
+	box-sizing:border-box;
+	
+}
+
+body {
+	
+	font-weight:300;
+	font-size: 15px;
+	line-height:30px;
+	color: white;
+	
+}
+.container{
+    overflow: hidden;
+}
+.container>div{
+    margin-top: 60px;
+}
+.container>div:nth-of-type(2){
+	max-width:400px;
+	margin:0 auto;
+	
+}
+.container>div{
+width: 50%;
+float: left;
+}
+#cForm input[type="text"], #cForm input[type="email"], #cForm input[type="tel"], #cForm input[type="url"], #cForm textarea, #cForm button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#cForm {
+	background:#5d7f9c;
+	padding:25px;
+	margin:50px 0;
+}
+
+#cForm h3 {
+    
+	color: #fce856;
+	display: block;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+form h4 {
+	margin:5px 0 15px;
+	display:block;
+    font-size:13px;
+    
+    color: white;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#cForm input, #cForm textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+    padding:10px;
+    font-size:15px;
+}
+
+#cForm input[type="text"]:hover, #cForm input[type="email"]:hover, #cForm input[type="tel"]:hover, #cForm input[type="url"]:hover, #cForm textarea:hover {
+    font-size:15px;
+	border:1px solid #AAA;
+}
+#cForm select{
+    width: 100%;
+    font-size:15px;
+    height: 38px;
+    
+}
+#cForm textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#cForm button {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#cForm button[type="submit"]:hover {
+	background:#09C;
+
+	transition:background-color 0.3s ease-in-out;
+}
+
+#cForm button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#cForm input:focus, #cForm textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+
+.hide{
+    display: none; 
+}
+.signupText{
+    width: 40%;
+    text-align: center;
+margin-top: 120px;
+padding-left: 20%;
+color: #fce856;
+font-size: 20px;
+}
+footer>ul{
+    margin: 10px;
+}
+        </style>
+        <link rel="stylesheet" href="Assets/Css/footer.css">
+    </head>
+    <body>
+        
+        <nav>
+
+            <ul class="Navbar-initial">
+                <li class="logo"><a href="./index.html">HomeStars</a></li>
+                <li><a href="./categories.html">Browse Categories</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./searchForReview.html">Write a Review</a></li>
+                <li><input type="text" name="Search_Category"  placeholder="Search a category"></li>
+                <li>
+                    <input type="text" name="Search_City"  placeholder="Search city">
+                </li>
+                <li>
+                    <button class="Search" style="color:#cbffff;"><span>Search</span></button>
+                    
+                </li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./signup.html">Signup</a></li>
+                <li><a href="./joinHomeStars.html">Join HomeStars</a></li>
+                
+            </ul>
+        </nav>
+<div class="container">  
+
+<div class="signupText">
+    <h2>
+        Hire Right the First Time. 
+    </h2>
+    <p>Project cost guides</p>
+    <p>Hiring tips </p>
+    <p>Seasonal maintenance reminders </p>
+</div>
+
+  <div class="signupForm">
+      <form id="cForm" action="#" method="post">
+  <h3>
+  Contact Us
+  </h3>
+  <h4>Contact us  and we will be with you soon!.</h4>
+  <h4>Interested in joining team Home</h4>
+  
+  <fieldset>
+  <input placeholder="First Name" type="text" tabindex="1" required>
+  </fieldset>
+  
+  <fieldset>
+  <input placeholder="Last Name" type="text" tabindex="1" required>
+  </fieldset>
+  
+  <fieldset>
+  <input placeholder="Email" type="email" tabindex="1" required>
+  </fieldset>
+  
+  <fieldset>
+  <button name="submit" type="submit" id="cForm-submit" data-submit="...Sending">Sign up</button>
+  </fieldset>
+  </form></div>
+ 
+
+</div>
+
+<footer class="footer">
+    <div class="newsletter">
+        <div class="newsletter_signup">
+            <span>Get Exclusive Tips & Advice</span>
+            <a href="./newsLetter_Signup.html">Newsletter Signup</a>
+        </div>
+        <div class="newsletter_contactus">
+            <span>Need help?</span>
+            <a href="./contactUs.html">Contact us</a>
+        </div>
+        <hr>
+    </div>
+    <ul>
+         <li>
+             Homeowners
+         </li>
+
+<li>
+    <a href="">Browse Categories</a>
+</li>
+<li>
+    <a href="">Browse Tasks</a>
+</li>
+<li>
+    <a href="">Write A Review</a>
+</li>
+<li>
+    <a href="">Blog</a>
+</li>
+<li>
+    <a href="">Star Reviewers</a>
+</li>
+
+    </ul>
+    <ul>
+        <li>
+            Homeowners
+        </li>
+    
+    <li>
+    <a href="">Browse Categories</a>
+    </li>
+    <li>
+    <a href="">Browse Tasks</a>
+    </li>
+    <li>
+    <a href="">Write A Review</a>
+    </li>
+    <li>
+    <a href="">Blog</a>
+    </li>
+    <li>
+    <a href="">Star Reviewers</a>
+    </li>
+    
+    </ul>
+    <ul>
+        <li>
+            Homeowners
+        </li>
+    
+    <li>
+    <a href="">Browse Categories</a>
+    </li>
+    <li>
+    <a href="">Browse Tasks</a>
+    </li>
+    <li>
+    <a href="">Write A Review</a>
+    </li>
+    <li>
+    <a href="">Blog</a>
+    </li>
+    <li>
+    <a href="">Star Reviewers</a>
+    </li>
+    
+    </ul>
+</footer>
+</body>
+</html>
